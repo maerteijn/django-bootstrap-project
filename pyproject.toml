@@ -30,6 +30,8 @@ url = "http://localhost:3141/root/pypi/+simple/"
 python = "^3.7"
 Django = "~2.2"
 psycopg2-binary = "2.8.1"
+dramatiq = {version = "^1.5",extras = ["rabbitmq"]}
+django_dramatiq = "^0.7.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"

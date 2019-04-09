@@ -114,6 +114,40 @@ type = "legacy"
 url = "http://localhost:3141/root/pypi/+simple"
 
 [[package]]
+category = "main"
+description = "A Django app for Dramatiq."
+name = "django-dramatiq"
+optional = false
+python-versions = ">=3.5"
+version = "0.7.0"
+
+[package.dependencies]
+django = ">=1.11"
+dramatiq = ">=0.18.0"
+
+[package.source]
+reference = "devpi"
+type = "legacy"
+url = "http://localhost:3141/root/pypi/+simple"
+
+[[package]]
+category = "main"
+description = "Background Processing for Python 3."
+name = "dramatiq"
+optional = false
+python-versions = ">=3.5"
+version = "1.5.0"
+
+[package.dependencies]
+pika = ">=0.13,<0.14"
+prometheus-client = ">=0.2,<0.3"
+
+[package.source]
+reference = "devpi"
+type = "legacy"
+url = "http://localhost:3141/root/pypi/+simple"
+
+[[package]]
 category = "dev"
 description = "Discover and load entry points from installed packages."
 name = "entrypoints"
@@ -203,12 +237,39 @@ type = "legacy"
 url = "http://localhost:3141/root/pypi/+simple"
 
 [[package]]
+category = "main"
+description = "Pika Python AMQP Client Library"
+marker = "extra == \"rabbitmq\""
+name = "pika"
+optional = false
+python-versions = "*"
+version = "0.13.1"
+
+[package.source]
+reference = "devpi"
+type = "legacy"
+url = "http://localhost:3141/root/pypi/+simple"
+
+[[package]]
 category = "dev"
 description = "plugin and hook calling mechanisms for python"
 name = "pluggy"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "0.9.0"
+
+[package.source]
+reference = "devpi"
+type = "legacy"
+url = "http://localhost:3141/root/pypi/+simple"
+
+[[package]]
+category = "main"
+description = "Python client for the Prometheus monitoring system."
+name = "prometheus-client"
+optional = false
+python-versions = "*"
+version = "0.2.0"
 
 [package.source]
 reference = "devpi"
@@ -389,7 +450,7 @@ type = "legacy"
 url = "http://localhost:3141/root/pypi/+simple"
 
 [metadata]
-content-hash = "a0c722aea890e6c31cbcb352caa6f8eb3a0850b9db2caa20039ce24abbb36ed0"
+content-hash = "fa42af01c3f1bd3fbfc1787d4b0d452bc5072c4994f7cd111902497b3b350ffe"
 python-versions = "^3.7"
 
 [metadata.hashes]
@@ -401,13 +462,17 @@ click = ["2335065e6395b9e67ca716de5f7526736bfa6ceead690adf616d925bdc622b13", "5b
 colorama = ["05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d", "f8ac84de7840f5b9c4e3347b3c1eaa50f7e49c2b07596221daec5edaabbd7c48"]
 coverage = ["3684fabf6b87a369017756b551cef29e505cb155ddb892a7a29277b978da88b9", "39e088da9b284f1bd17c750ac672103779f7954ce6125fd4382134ac8d152d74", "3c205bc11cc4fcc57b761c2da73b9b72a59f8d5ca89979afb0c1c6f9e53c7390", "465ce53a8c0f3a7950dfb836438442f833cf6663d407f37d8c52fe7b6e56d7e8", "48020e343fc40f72a442c8a1334284620f81295256a6b6ca6d8aa1350c763bbe", "5296fc86ab612ec12394565c500b412a43b328b3907c0d14358950d06fd83baf", "5f61bed2f7d9b6a9ab935150a6b23d7f84b8055524e7be7715b6513f3328138e", "68a43a9f9f83693ce0414d17e019daee7ab3f7113a70c79a3dd4c2f704e4d741", "6b8033d47fe22506856fe450470ccb1d8ba1ffb8463494a15cfc96392a288c09", "7ad7536066b28863e5835e8cfeaa794b7fe352d99a8cded9f43d1161be8e9fbd", "7bacb89ccf4bedb30b277e96e4cc68cd1369ca6841bde7b005191b54d3dd1034", "839dc7c36501254e14331bcb98b27002aa415e4af7ea039d9009409b9d2d5420", "8f9a95b66969cdea53ec992ecea5406c5bd99c9221f539bca1e8406b200ae98c", "932c03d2d565f75961ba1d3cec41ddde00e162c5b46d03f7423edcb807734eab", "988529edadc49039d205e0aa6ce049c5ccda4acb2d6c3c5c550c17e8c02c05ba", "998d7e73548fe395eeb294495a04d38942edb66d1fa61eb70418871bc621227e", "9de60893fb447d1e797f6bf08fdf0dbcda0c1e34c1b06c92bd3a363c0ea8c609", "9e80d45d0c7fcee54e22771db7f1b0b126fb4a6c0a2e5afa72f66827207ff2f2", "a545a3dfe5082dc8e8c3eb7f8a2cf4f2870902ff1860bd99b6198cfd1f9d1f49", "a5d8f29e5ec661143621a8f4de51adfb300d7a476224156a39a392254f70687b", "aca06bfba4759bbdb09bf52ebb15ae20268ee1f6747417837926fae990ebc41d", "bb23b7a6fd666e551a3094ab896a57809e010059540ad20acbeec03a154224ce", "bfd1d0ae7e292105f29d7deaa9d8f2916ed8553ab9d5f39ec65bcf5deadff3f9", "c62ca0a38958f541a73cf86acdab020c2091631c137bd359c4f5bddde7b75fd4", "c709d8bda72cf4cd348ccec2a4881f2c5848fd72903c185f363d361b2737f773", "c968a6aa7e0b56ecbd28531ddf439c2ec103610d3e2bf3b75b813304f8cb7723", "df785d8cb80539d0b55fd47183264b7002077859028dfe3070cf6359bf8b2d9c", "f406628ca51e0ae90ae76ea8398677a921b36f0bd71aab2099dfed08abd0322f", "f46087bbd95ebae244a0eda01a618aff11ec7a069b15a3ef8f6b520db523dcf1", "f8019c5279eb32360ca03e9fac40a12667715546eed5c5eb59eb381f2f501260", "fc5f4d209733750afd2714e9109816a29500718b32dd9a5db01c0cb3a019b96a"]
 django = ["7c3543e4fb070d14e10926189a7fcf42ba919263b7473dceaefce34d54e8a119", "a2814bffd1f007805b19194eb0b9a331933b82bd5da1c3ba3d7b7ba16e06dc4b"]
+django-dramatiq = ["351f0d15e3c468436787c1cf4195718645a175b8aef4d90cb4067c8861afadd4", "45accdb64a5ab0c162ffaca1e0932f7679cfd0802f73846b0c28bce01764a731"]
+dramatiq = ["2ba322cc93bd218bb9838cf8181ea162a8eaaf4220f6c29f43ae25e17a47250c", "f2a19cabf090117d29bf156f1d765fa84972d09e0e31ad4e5958c52c0574377a"]
 entrypoints = ["589f874b313739ad35be6e0cd7efde2a4e9b6fea91edcc34e58ecbb8dbe56d19", "c70dd71abe5a8c85e55e12c19bd91ccfeec11a6e99044204511f9ed547d48451"]
 flake8 = ["859996073f341f2670741b51ec1e67a01da142831aa1fdc6242dbf88dffbe661", "a796a115208f5c03b18f332f7c11729812c8c3ded6c46319c59b53efd3819da8"]
 flake8-isort = ["1e67b6b90a9b980ac3ff73782087752d406ce0a729ed928b92797f9fa188917e", "81a8495eefed3f2f63f26cd2d766c7b1191e923a15b9106e6233724056572c68"]
 isort = ["01cb7e1ca5e6c5b3f235f0385057f70558b70d2f00320208825fa62887292f43", "268067462aed7eb2a1e237fcb287852f22077de3fb07964e87e00f829eea2d1a"]
 mccabe = ["ab8a6258860da4b6677da4bd2fe5dc2c659cff31b3ee4f7f5d64e79735b80d42", "dd8d182285a0fe56bace7f45b5e7d1a6ebcbf524e8f3bd87eb0f125271b8831f"]
 more-itertools = ["2112d2ca570bb7c3e53ea1a35cd5df42bb0fd10c45f0fb97178679c3c03d64c7", "c3e4748ba1aad8dba30a4886b0b1a2004f9a863837b8654e7059eebf727afa5a"]
+pika = ["b0640085f1d6398fd47bb16a17713053e26578192821ea5d928772b8e6a28789", "b785e0d5f74a94781bd7d020862eb137d2b56cef2a21475aadbe5bcc8ec4db15"]
 pluggy = ["19ecf9ce9db2fce065a7a0586e07cfb4ac8614fe96edf628a264b1c70116cf8f", "84d306a647cc805219916e62aab89caa97a33a1dd8c342e87a37f91073cd4746"]
+prometheus-client = ["d96472e43bb49b10ec748b59014af122048ff7c5c2528994683e4783250865e4"]
 psycopg2-binary = ["163d3ee445a0b4c0109877da9e46271aacf4e5e3d60ae7368669555c30f13e7c", "1af0bfe7b0c13a0e613a27311fd4f9c5d024e8fc0f4b3d284e7df02a58a11fc0", "2169c3a1bf52d5b30cc98625b5919a964c571a32e8646be20be6c7e3e82079de", "218f079fa48e2ef812dc3d3ce6ec2f67ac56427ba4b038d5d6331f2cceb489c2", "26a958930687e94c4c6c73c171e4d4783b82ae4e16aa3424e6bcd4529bceedf0", "2c7c195aef3acdbc853942bc674844031a732890d2fee88a324298ed376b6c2b", "2ecdbfed7004669472bfa27c8d51012c717c241c7154ae17e4c8f93024043525", "345fc31b71a90ada1b51826537917b19a1af685a91c0f066787069c184d7d00f", "378a06649503f548be5f1e9eec2e94cc1d6138250b82a08dcc6151bca8cec107", "3f300bf2930e501dde09605de85cb2b84c2638e2c954be02a3c86f28176d3525", "6c2f66c653ce8bbd7e789d0f7f92c3f9fea881b55226f0ae5ee550cce9e3cf0e", "6fccbac2633831b877a8fbf865f7082d34895e82a015795a9f80f99a2efe2576", "7a166f8ccb6888358d3e67795b057540ea7caa71ab9e089b0cb0097f01088965", "8f6b84f887ec6fef6c1796779f8ec2603dc7e9ef52bc9269de719d4bcbdaebbb", "92cf3ceb7bb90cf35b8bd993c640b15d4832ba0e142a3b9da5006ef217da595d", "a20dfdf73f56da674926a3811929cff9fd23b9af90be9a6c36ac246a3486eef3", "a84415df4689251556c961e4fe3b25d30e32f00faa8064ce0909458dbe0d67b2", "ab1aa1cd50df3860f624c9713ee9e690eefd4e049d3a4d86577bab6e741e9616", "abc9dcf85e75a8687f2a6d560c0c1a2593e8e34ba6f9ad6721f8212c5de179a2", "c10454710a81a2f4b1ff4d1c83ac2cec63e0e55845a56324991514af5b1299d0", "c38f80719e4dfae7a6311a4f091f07f4fb2fb5d602352015d5639f63f8fabb68", "d75cf00605630b2cfefa5c62373c605dcda1cc0d607902847dbb8e8e9b67c1ce", "dce15cb6ef604c9e38fdaa848f58f83153ade9f4aa5e4cf5812aa27163561750", "e7e0db4311bb76bf3f6e0380f71912cfa6d0be7cc635e3772476050b0dabdabd", "eac59cae78dfe3fbf7ece25c170d7a152f88df7643381aa5e7344c2028a8d8d4", "ead7b3e1567bd14cacd44279c5e42cd19f54b9feed39180220253f4fbe3abd56", "ed772a5e8e7e5dd6bede960a86940c17cf653c7f158dafa5d52e919b676f10ba", "f2d73131acb94afa45de8b6b8a4bfb21bbe3736633d6478e53247f19dd8c299c"]
 py = ["64f65755aee5b381cea27766a3a147c3f15b9b6b9ac88676de66ba2ae36793fa", "dc639b046a6e2cff5bbe40194ad65936d6ba360b52b3c3fe1d08a82dd50b5e53"]
 pycodestyle = ["95a2219d12372f05704562a14ec30bc76b05a5b297b21a5dfe3f6fac3491ae56", "e40a936c9a450ad81df37f549d676d127b1b66000a6c500caa2b085bc0ca976c"]
