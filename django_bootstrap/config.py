@@ -8,3 +8,7 @@ class DjangoBootstrapAdminConfig(AdminConfig):
 
 class DjangoBootstrapConfig(AppConfig):
     name = "django_bootstrap"
+
+    def ready(self):
+        from .actors import register_actors  # noqa
+        register_actors()

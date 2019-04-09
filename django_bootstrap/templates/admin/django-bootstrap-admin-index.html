@@ -3,4 +3,7 @@
 
 {% block content_title %}
 {{ block.super }}
+<div class="module">
+<a class="button" href="{% url 'hello-world-actor' %}">Hello world actor</a>
+</div>
 {% endblock %}
