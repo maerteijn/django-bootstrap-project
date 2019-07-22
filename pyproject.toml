@@ -30,6 +30,7 @@ url = "http://localhost:3141/root/pypi/+simple/"
 python = "^3.7"
 Django = "~2.2"
 psycopg2-binary = "~2.8"
+wagtail = "^2.5"
 
 [tool.poetry.dev-dependencies]
 flake8 = "~3.7"
