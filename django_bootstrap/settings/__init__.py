@@ -1,1 +1,1 @@
-from .base import *  # noqa
+from .wagtail import *  # noqa
