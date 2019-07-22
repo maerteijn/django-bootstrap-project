@@ -29,15 +29,15 @@ url = "http://localhost:3141/root/pypi/+simple/"
 [tool.poetry.dependencies]
 python = "^3.7"
 Django = "~2.2"
-psycopg2-binary = "2.8.1"
+psycopg2-binary = "~2.8"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.7"
+flake8 = "~3.7"
 flake8-isort =  "^2.7.0"
 black = {version = "^19.3-beta.0",allows-prereleases = true}
-pytest = "^3.0"
-pytest-django = "^3.4"
-pytest-cov = "^2.6"
+pytest = "~^5.0"
+pytest-django = "^3.5.1"
+pytest-cov = "~2.7.1"
 
 [tool.poetry.scripts]
 "manage.py" =  "django_manage:main"
