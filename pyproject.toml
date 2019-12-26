@@ -10,7 +10,7 @@ classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Framework :: Django :: 2.2",
+    "Framework :: Django :: 3.0",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: POSIX",
@@ -28,16 +28,16 @@ url = "http://localhost:3141/root/pypi/+simple/"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-Django = "~2.2"
+Django = "~3.0"
 psycopg2-binary = "~2.8"
 
 [tool.poetry.dev-dependencies]
 flake8 = "~3.7"
 flake8-isort =  "^2.7.0"
-black = {version = "^19.3-beta.0",allows-prereleases = true}
-pytest = "~^5.0"
-pytest-django = "^3.5.1"
-pytest-cov = "~2.7.1"
+black = {version = "^19.10b0 ",allow-prereleases = true}
+pytest = "~^5.3"
+pytest-django = "~3.7"
+pytest-cov = "~2.8"
 
 [tool.poetry.scripts]
 "manage.py" =  "django_manage:main"
