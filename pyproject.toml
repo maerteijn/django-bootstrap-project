@@ -45,3 +45,22 @@ pytest-cov = "~2.8"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.isort]
+force_grid_wrap=0
+include_trailing_comma=true
+line_length=88
+multi_line_output=3
+use_parentheses=true
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "django_bootstrap.settings"
+testpaths = "tests/"
+addopts = "--no-migrations --create-db --cov=django_bootstrap"
+
+[tool.coverage.run]
+omit = "*/migrations/*"
+
+[tool.coverage.report]
+show_missing = true
+
