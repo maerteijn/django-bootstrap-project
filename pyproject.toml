@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "django-bootstrap"
+name = "django-bootstrap-project"
 version = "0.0.1"
-description = "A Django base installation bootstrap example"
+description = "An boilerplate / bootstrap installation of a Django project"
 authors = ["Martijn Jacobs <maerteijn@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/maerteijn/django-bootstrap"
+repository = "https://github.com/maerteijn/django-bootstrap-project"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Framework :: Django :: 3.0",
+    "Framework :: Django :: 3.2",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Operating System :: POSIX",
@@ -19,7 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3.9"
 ]
 packages = [
-    { include = "django_bootstrap" },
+    { include = "django_bootstrap_project" },
 ]
 
 include = ["django_manage.py"]
@@ -48,7 +48,7 @@ pytest-cov = "~2.11"
 "manage.py" =  "django_manage:main"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.0", " poetry-dynamic-versioning"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.isort]
@@ -59,9 +59,9 @@ multi_line_output = 3
 use_parentheses = true
 
 [tool.pytest.ini_options]
-DJANGO_SETTINGS_MODULE = "django_bootstrap.settings"
+DJANGO_SETTINGS_MODULE = "django_bootstrap_project.settings"
 testpaths = "tests/"
-addopts = "--no-migrations --create-db --cov=django_bootstrap"
+addopts = "--no-migrations --create-db --cov=django_bootstrap_project"
 
 [tool.coverage.run]
 omit = ["**/migrations/**", "**/tests/**", "**/manage.py", "**/settings/**", "**/wsgi.py"]

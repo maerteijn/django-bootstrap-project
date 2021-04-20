@@ -16,8 +16,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "django_bootstrap.config.DjangoBootstrapAdminConfig",
-    "django_bootstrap"
+    "django_bootstrap_project.config.DjangoBootstrapProjectAdminConfig",
+    "django_bootstrap_project"
 ]
 
 MIDDLEWARE = [
@@ -30,7 +30,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "django_bootstrap.urls"
+ROOT_URLCONF = "django_bootstrap_project.urls"
 
 TEMPLATES = [
     {
@@ -48,7 +48,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "django_bootstrap.wsgi.application"
+WSGI_APPLICATION = "django_bootstrap_project.wsgi.application"
 
 
 # Database
@@ -56,7 +56,7 @@ WSGI_APPLICATION = "django_bootstrap.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django-bootstrap',
+        'NAME': 'django-bootstrap-project',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST': '127.0.0.1',
