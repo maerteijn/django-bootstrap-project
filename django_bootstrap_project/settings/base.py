@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_bootstrap_project.config.DjangoBootstrapProjectAdminConfig",
-    "django_bootstrap_project"
+    "django_bootstrap_project",
 ]
 
 MIDDLEWARE = [
@@ -54,13 +54,13 @@ WSGI_APPLICATION = "django_bootstrap_project.wsgi.application"
 # Database
 # ========
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django-bootstrap-project',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "django-bootstrap-project",
+        "USER": "postgres",
+        "PASSWORD": "postgres",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
@@ -86,7 +86,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # =====
 
 LANGUAGE_CODE = "en-us"
-TIME_ZONE = 'Europe/Amsterdam'
+TIME_ZONE = "Europe/Amsterdam"
 USE_I18N = True
 USE_L10N = True
 
