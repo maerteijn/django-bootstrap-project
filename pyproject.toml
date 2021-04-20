@@ -22,8 +22,6 @@ packages = [
     { include = "django_bootstrap_project" },
 ]
 
-include = ["django_manage.py"]
-
 [[tool.poetry.source]]
 name = "devpi"
 url = "http://localhost:3141/root/pypi/+simple/"
@@ -45,7 +43,7 @@ pytest-django = "~4.2"
 pytest-cov = "~2.11"
 
 [tool.poetry.scripts]
-"manage.py" =  "django_manage:main"
+"manage.py" =  "django_bootstrap_project.manage:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", " poetry-dynamic-versioning"]
