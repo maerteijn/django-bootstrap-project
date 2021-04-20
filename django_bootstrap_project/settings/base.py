@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_bootstrap_project.config.DjangoBootstrapProjectAdminConfig",
-    "django_bootstrap_project",
+    "django_bootstrap_project.config.DjangoBootstrapProjectConfig",
 ]
 
 MIDDLEWARE = [
