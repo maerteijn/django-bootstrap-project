@@ -6,11 +6,6 @@ category = "main"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "asgiref"
 version = "3.3.4"
@@ -25,11 +20,6 @@ typing-extensions = {version = "*", markers = "python_version < \"3.8\""}
 [package.extras]
 tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "atomicwrites"
 version = "1.4.0"
@@ -37,11 +27,6 @@ description = "Atomic file writes."
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "attrs"
@@ -57,11 +42,6 @@ docs = ["furo", "sphinx", "zope.interface"]
 tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "zope.interface"]
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "black"
 version = "20.8b1"
@@ -73,21 +53,16 @@ python-versions = ">=3.6"
 [package.dependencies]
 appdirs = "*"
 click = ">=7.1.2"
-mypy_extensions = ">=0.4.3"
+mypy-extensions = ">=0.4.3"
 pathspec = ">=0.6,<1"
 regex = ">=2020.1.8"
 toml = ">=0.10.1"
 typed-ast = ">=1.4.0"
-typing_extensions = ">=3.7.4"
+typing-extensions = ">=3.7.4"
 
 [package.extras]
 colorama = ["colorama (>=0.4.3)"]
 d = ["aiohttp (>=3.3.2)", "aiohttp-cors"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "cachecontrol"
@@ -106,11 +81,6 @@ requests = "*"
 filecache = ["lockfile (>=0.9)"]
 redis = ["redis (>=2.10.5)"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "cachy"
 version = "0.3.0"
@@ -120,14 +90,9 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [package.extras]
-msgpack = ["msgpack-python (>=0.5,<0.6)"]
-memcached = ["python-memcached (>=1.59,<2.0)"]
 redis = ["redis (>=3.3.6,<4.0.0)"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
+memcached = ["python-memcached (>=1.59,<2.0)"]
+msgpack = ["msgpack-python (>=0.5,<0.6)"]
 
 [[package]]
 name = "certifi"
@@ -136,11 +101,6 @@ description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "cffi"
@@ -153,11 +113,6 @@ python-versions = "*"
 [package.dependencies]
 pycparser = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "chardet"
 version = "4.0.0"
@@ -165,11 +120,6 @@ description = "Universal encoding detector for Python 2 and 3"
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "cleo"
@@ -182,11 +132,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 [package.dependencies]
 clikit = ">=0.6.0,<0.7.0"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "click"
 version = "7.1.2"
@@ -194,11 +139,6 @@ description = "Composable command line interface toolkit"
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "clikit"
@@ -213,11 +153,6 @@ crashtest = {version = ">=0.3.0,<0.4.0", markers = "python_version >= \"3.6\" an
 pastel = ">=0.2.0,<0.3.0"
 pylev = ">=1.3,<2.0"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "colorama"
 version = "0.4.4"
@@ -225,11 +160,6 @@ description = "Cross-platform colored terminal text."
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "coverage"
@@ -242,11 +172,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 [package.extras]
 toml = ["toml"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "crashtest"
 version = "0.3.1"
@@ -254,11 +179,6 @@ description = "Manage Python errors with ease"
 category = "main"
 optional = false
 python-versions = ">=3.6,<4.0"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "cryptography"
@@ -279,11 +199,6 @@ sdist = ["setuptools-rust (>=0.11.4)"]
 ssh = ["bcrypt (>=3.1.5)"]
 test = ["pytest (>=6.0)", "pytest-cov", "pytest-subtests", "pytest-xdist", "pretend", "iso8601", "pytz", "hypothesis (>=1.11.4,!=3.79.2)"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "distlib"
 version = "0.3.1"
@@ -291,11 +206,6 @@ description = "Distribution utilities"
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "django"
@@ -314,11 +224,6 @@ sqlparse = ">=0.2.2"
 argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "django-environ"
 version = "0.4.5"
@@ -327,11 +232,6 @@ category = "main"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "filelock"
 version = "3.0.12"
@@ -339,11 +239,6 @@ description = "A platform independent file lock."
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "flake8"
@@ -359,11 +254,6 @@ mccabe = ">=0.6.0,<0.7.0"
 pycodestyle = ">=2.6.0a1,<2.7.0"
 pyflakes = ">=2.2.0,<2.3.0"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "flake8-black"
 version = "0.2.1"
@@ -375,11 +265,6 @@ python-versions = "*"
 [package.dependencies]
 black = "*"
 flake8 = ">=3.0.0"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "flake8-isort"
@@ -396,11 +281,6 @@ testfixtures = ">=6.8.0,<7"
 
 [package.extras]
 test = ["pytest (>=4.0.2,<6)", "toml"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "html5lib"
@@ -420,11 +300,6 @@ chardet = ["chardet (>=2.2)"]
 genshi = ["genshi"]
 lxml = ["lxml"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "idna"
 version = "2.10"
@@ -432,11 +307,6 @@ description = "Internationalized Domain Names in Applications (IDNA)"
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "importlib-metadata"
@@ -453,11 +323,6 @@ zipp = ">=0.5"
 docs = ["sphinx", "rst.linker"]
 testing = ["packaging", "pep517", "importlib-resources (>=1.3)"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "iniconfig"
 version = "1.1.1"
@@ -465,11 +330,6 @@ description = "iniconfig: brain-dead simple config-ini parsing"
 category = "dev"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "isort"
@@ -480,14 +340,9 @@ optional = false
 python-versions = ">=3.6,<4.0"
 
 [package.extras]
-colors = ["colorama (>=0.4.3,<0.5.0)"]
-requirements_deprecated_finder = ["pip-api", "pipreqs"]
 pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
+requirements_deprecated_finder = ["pipreqs", "pip-api"]
+colors = ["colorama (>=0.4.3,<0.5.0)"]
 
 [[package]]
 name = "jeepney"
@@ -499,11 +354,6 @@ python-versions = ">=3.6"
 
 [package.extras]
 test = ["pytest", "pytest-trio", "pytest-asyncio", "testpath", "trio"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "keyring"
@@ -523,11 +373,6 @@ SecretStorage = {version = ">=3.2", markers = "sys_platform == \"linux\""}
 docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "jaraco.test (>=3.2.0)", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "lockfile"
 version = "0.12.2"
@@ -535,11 +380,6 @@ description = "Platform-independent file locking module"
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "mccabe"
@@ -549,11 +389,6 @@ category = "dev"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "msgpack"
 version = "1.0.2"
@@ -562,11 +397,6 @@ category = "main"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "mypy-extensions"
 version = "0.4.3"
@@ -574,11 +404,6 @@ description = "Experimental type system extensions for programs checked with the
 category = "dev"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "packaging"
@@ -591,11 +416,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 [package.dependencies]
 pyparsing = ">=2.0.2"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pastel"
 version = "0.2.1"
@@ -604,11 +424,6 @@ category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pathspec"
 version = "0.8.1"
@@ -616,11 +431,6 @@ description = "Utility library for gitignore style pattern matching of file path
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pexpect"
@@ -633,11 +443,6 @@ python-versions = "*"
 [package.dependencies]
 ptyprocess = ">=0.5"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pkginfo"
 version = "1.7.0"
@@ -648,11 +453,6 @@ python-versions = "*"
 
 [package.extras]
 testing = ["nose", "coverage"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pluggy"
@@ -667,11 +467,6 @@ importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 
 [package.extras]
 dev = ["pre-commit", "tox"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "poetry"
@@ -700,11 +495,6 @@ shellingham = ">=1.1,<2.0"
 tomlkit = ">=0.7.0,<1.0.0"
 virtualenv = ">=20.0.26,<21.0.0"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "poetry-core"
 version = "1.0.3"
@@ -716,11 +506,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 [package.dependencies]
 importlib-metadata = {version = ">=1.7.0,<2.0.0", markers = "python_version >= \"2.7\" and python_version < \"2.8\" or python_version >= \"3.5\" and python_version < \"3.8\""}
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "psycopg2-binary"
 version = "2.8.6"
@@ -728,11 +513,6 @@ description = "psycopg2 - Python-PostgreSQL Database Adapter"
 category = "main"
 optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "ptyprocess"
@@ -742,11 +522,6 @@ category = "main"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "py"
 version = "1.10.0"
@@ -754,11 +529,6 @@ description = "library with cross-python path, ini-parsing, io, code, log facili
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pycodestyle"
@@ -768,11 +538,6 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pycparser"
 version = "2.20"
@@ -780,11 +545,6 @@ description = "C parser in Python"
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pyflakes"
@@ -794,11 +554,6 @@ category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pylev"
 version = "1.3.0"
@@ -807,11 +562,6 @@ category = "main"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pyparsing"
 version = "2.4.7"
@@ -819,11 +569,6 @@ description = "Python parsing module"
 category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pytest"
@@ -847,11 +592,6 @@ toml = "*"
 [package.extras]
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pytest-cov"
 version = "2.11.1"
@@ -866,11 +606,6 @@ pytest = ">=4.6"
 
 [package.extras]
 testing = ["fields", "hunter", "process-tests (==2.0.2)", "six", "pytest-xdist", "virtualenv"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pytest-django"
@@ -887,11 +622,6 @@ pytest = ">=5.4.0"
 docs = ["sphinx", "sphinx-rtd-theme"]
 testing = ["django", "django-configurations (>=2.0)"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "pytz"
 version = "2021.1"
@@ -899,11 +629,6 @@ description = "World timezone definitions, modern and historical"
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "pywin32-ctypes"
@@ -913,11 +638,6 @@ category = "main"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "regex"
 version = "2021.4.4"
@@ -925,11 +645,6 @@ description = "Alternative regular expression module, to replace re."
 category = "dev"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "requests"
@@ -949,11 +664,6 @@ urllib3 = ">=1.21.1,<1.27"
 security = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)"]
 socks = ["PySocks (>=1.5.6,!=1.5.7)", "win-inet-pton"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "requests-toolbelt"
 version = "0.9.1"
@@ -964,11 +674,6 @@ python-versions = "*"
 
 [package.dependencies]
 requests = ">=2.0.1,<3.0.0"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "secretstorage"
@@ -982,11 +687,6 @@ python-versions = ">=3.6"
 cryptography = ">=2.0"
 jeepney = ">=0.6"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "shellingham"
 version = "1.4.0"
@@ -994,11 +694,6 @@ description = "Tool to Detect Surrounding Shell"
 category = "main"
 optional = false
 python-versions = "!=3.0,!=3.1,!=3.2,!=3.3,>=2.6"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "six"
@@ -1008,11 +703,6 @@ category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "sqlparse"
 version = "0.4.1"
@@ -1020,11 +710,6 @@ description = "A non-validating SQL parser."
 category = "main"
 optional = false
 python-versions = ">=3.5"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "testfixtures"
@@ -1039,11 +724,6 @@ build = ["setuptools-git", "wheel", "twine"]
 docs = ["sphinx", "zope.component", "sybil", "twisted", "mock", "django (<2)", "django"]
 test = ["pytest (>=3.6)", "pytest-cov", "pytest-django", "zope.component", "sybil", "twisted", "mock", "django (<2)", "django"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "toml"
 version = "0.10.2"
@@ -1051,11 +731,6 @@ description = "Python Library for Tom's Obvious, Minimal Language"
 category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "tomlkit"
@@ -1065,11 +740,6 @@ category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "typed-ast"
 version = "1.4.3"
@@ -1078,11 +748,6 @@ category = "dev"
 optional = false
 python-versions = "*"
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "typing-extensions"
 version = "3.7.4.3"
@@ -1090,11 +755,6 @@ description = "Backported and Experimental Type Hints for Python 3.5+"
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "urllib3"
@@ -1108,11 +768,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
 socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 brotli = ["brotlipy (>=0.6.0)"]
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "virtualenv"
@@ -1133,11 +788,6 @@ six = ">=1.9.0,<2"
 docs = ["proselint (>=0.10.2)", "sphinx (>=3)", "sphinx-argparse (>=0.2.5)", "sphinx-rtd-theme (>=0.4.3)", "towncrier (>=19.9.0rc1)"]
 testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", "pytest (>=4)", "pytest-env (>=0.6.2)", "pytest-freezegun (>=0.4.1)", "pytest-mock (>=2)", "pytest-randomly (>=1)", "pytest-timeout (>=1)", "packaging (>=20.0)", "xonsh (>=0.9.16)"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [[package]]
 name = "webencodings"
 version = "0.5.1"
@@ -1145,11 +795,6 @@ description = "Character encoding aliases for legacy web content"
 category = "main"
 optional = false
 python-versions = "*"
-
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
 
 [[package]]
 name = "zipp"
@@ -1163,15 +808,10 @@ python-versions = ">=3.6"
 docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
-[package.source]
-type = "legacy"
-url = "http://localhost:3141/root/pypi/+simple"
-reference = "devpi"
-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "0b3d27d0ba603fc35d7098579b33a829aa9bc13a7d3287fd2df2c91451721479"
+content-hash = "e490f2996c83b65a7b2cd8e3b8ac4038eef4a1e50fa45c400630a4b5d9541f7f"
 
 [metadata.files]
 appdirs = [

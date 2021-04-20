@@ -22,11 +22,6 @@ packages = [
     { include = "django_bootstrap_project" },
 ]
 
-[[tool.poetry.source]]
-name = "devpi"
-url = "http://localhost:3141/root/pypi/+simple/"
-default = true
-
 [tool.poetry.dependencies]
 python = "^3.7"
 Django = "3.2"
