@@ -1,4 +1,5 @@
 # django-bootstrap-project
+[![Django CI](https://github.com/maerteijn/django-bootstrap-project/actions/workflows/ci.yml/badge.svg)](https://github.com/maerteijn/django-bootstrap-project/actions/workflows/ci.yml)
 
 A clean Poetry based Django project which includes CI
 
