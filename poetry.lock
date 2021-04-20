@@ -320,6 +320,19 @@ url = "http://localhost:3141/root/pypi/+simple"
 reference = "devpi"
 
 [[package]]
+name = "django-environ"
+version = "0.4.5"
+description = "Django-environ allows you to utilize 12factor inspired environment variables to configure your Django application."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "http://localhost:3141/root/pypi/+simple"
+reference = "devpi"
+
+[[package]]
 name = "filelock"
 version = "3.0.12"
 description = "A platform independent file lock."
@@ -1158,7 +1171,7 @@ reference = "devpi"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "375679e65ace02c68760183978caa85fb720c1b94e20e3be79e9e3b9733c29ee"
+content-hash = "0b3d27d0ba603fc35d7098579b33a829aa9bc13a7d3287fd2df2c91451721479"
 
 [metadata.files]
 appdirs = [
@@ -1330,6 +1343,10 @@ distlib = [
 django = [
     {file = "Django-3.2-py3-none-any.whl", hash = "sha256:0604e84c4fb698a5e53e5857b5aea945b2f19a18f25f10b8748dbdf935788927"},
     {file = "Django-3.2.tar.gz", hash = "sha256:21f0f9643722675976004eb683c55d33c05486f94506672df3d6a141546f389d"},
+]
+django-environ = [
+    {file = "django-environ-0.4.5.tar.gz", hash = "sha256:6c9d87660142608f63ec7d5ce5564c49b603ea8ff25da595fd6098f6dc82afde"},
+    {file = "django_environ-0.4.5-py2.py3-none-any.whl", hash = "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"},
 ]
 filelock = [
     {file = "filelock-3.0.12-py3-none-any.whl", hash = "sha256:929b7d63ec5b7d6b71b0fa5ac14e030b3f70b75747cef1b10da9b879fef15836"},
