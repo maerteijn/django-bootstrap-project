@@ -66,10 +66,10 @@ WSGI_APPLICATION = "django_bootstrap_project.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "django-bootstrap-project",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
-        "HOST": "127.0.0.1",
+        "NAME": env.str("PGDATABASE", default="django-bootstrap-project"),
+        "USER": env.str("PGUSER", default="postgres"),
+        "PASSWORD": env.str("PGPASSWORD", default="postgres"),
+        "HOST": env.str("PGHOST", default="127.0.0.1"),
         "PORT": "5432",
     }
 }
@@ -109,3 +109,8 @@ STATIC_ROOT = env.str(
     "STATIC_ROOT", default=os.path.join(BASE_DIR.parent.parent, "staticfiles")
 )
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+MEDIA_ROOT = env.str(
+    "MEDIA_ROOT", default=os.path.join(BASE_DIR.parent.parent, "media")
+)
+MEDIA_URL = "/media/"

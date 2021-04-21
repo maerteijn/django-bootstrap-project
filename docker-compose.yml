@@ -1,0 +1,22 @@
+version: '3'
+services:
+  dbp-postgres:
+    image: postgres:latest
+    container_name: dbp-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: django-bootstrap-project
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+  dpp-django:
+    container_name: dbp-django
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    image: dbp-django
+    depends_on:
+      - dbp-postgres
+    ports:
+      - "8000:8000"
+    env_file:
+      - docker/docker-compose.env

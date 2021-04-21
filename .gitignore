@@ -13,4 +13,5 @@ pyvenv.cfg
 .venv/
 dist/
 staticfiles/
+media/
 .pytest_cache
