@@ -1,14 +1,19 @@
+import os
+from pathlib import Path
+
 import environ
 
 env = environ.Env()
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don"t run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool("DEBUG", default=True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS", default=("localhost", "127.0.0.1"))
 
 # Application definition
 INSTALLED_APPS = [
@@ -16,6 +21,7 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
     "django_bootstrap_project.config.DjangoBootstrapProjectConfig",
     "django_bootstrap_project.config.DjangoBootstrapProjectAdminConfig",
@@ -23,6 +29,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -98,3 +105,7 @@ USE_L10N = True
 # ============
 
 STATIC_URL = "/static/"
+STATIC_ROOT = env.str(
+    "STATIC_ROOT", default=os.path.join(BASE_DIR.parent, "staticfiles")
+)
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
