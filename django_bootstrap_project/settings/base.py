@@ -3,9 +3,7 @@ import environ
 env = environ.Env()
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env.str(
-    "SECRET_KEY", default="b9n^vq4kazd9%#xipegu@^+dt-4=f72ab3=v8jrjlqgc-dcaul"
-)
+SECRET_KEY = env.str("SECRET_KEY")
 
 # SECURITY WARNING: don"t run with debug turned on in production!
 DEBUG = True
