@@ -38,9 +38,16 @@ pytest = "~^6.2"
 pytest-django = "~4.2"
 pytest-cov = "~2.11"
 pytest-env = "^0.6.2"
+poetry-dynamic-versioning = "^0.12.6"
 
 [tool.poetry.scripts]
 "manage.py" =  "django_bootstrap_project.manage:main"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+metadata = true
+tagged-metadata = true
+latest-tag = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0", " poetry-dynamic-versioning"]
