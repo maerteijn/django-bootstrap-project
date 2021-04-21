@@ -1,0 +1,10 @@
+{% extends "admin/index.html" %}
+{% load i18n static %}
+
+{% block welcome-msg %}
+    {{ version }}
+    {{ block.super }}
+{% endblock %}
+{% block branding %}
+{{ block.super }}
+{% endblock %}
