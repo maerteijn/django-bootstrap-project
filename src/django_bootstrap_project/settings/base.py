@@ -106,6 +106,6 @@ USE_L10N = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = env.str(
-    "STATIC_ROOT", default=os.path.join(BASE_DIR.parent, "staticfiles")
+    "STATIC_ROOT", default=os.path.join(BASE_DIR.parent.parent, "staticfiles")
 )
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
