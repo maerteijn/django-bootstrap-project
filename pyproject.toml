@@ -26,7 +26,6 @@ packages = [
 python = "^3.7"
 Django = "3.2"
 psycopg2-binary = "~2.8"
-poetry = "~1.1"
 django-environ = "^0.4.5"
 whitenoise = "^5.2.0"
 uWSGI = "^2.0.19"
@@ -40,6 +39,7 @@ pytest = "~^6.2"
 pytest-django = "~4.2"
 pytest-cov = "~2.11"
 pytest-env = "^0.6.2"
+poetry = "~1.1"
 poetry-dynamic-versioning = "^0.12.6"
 
 [tool.poetry.scripts]
