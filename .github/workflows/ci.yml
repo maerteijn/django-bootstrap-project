@@ -40,10 +40,11 @@ jobs:
         run: |
           pip install poetry
           poetry install
-      - name: Lint with flake8
+      - name: Lint with flake8 and pylints
         run: |
           source $(poetry env info --path)/bin/activate
           flake8 .
+          pylint src/
       - name: Upload src dir as artefact
         uses: actions/upload-artifact@v2
         with:

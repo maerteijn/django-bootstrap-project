@@ -13,14 +13,16 @@ poetry install
 ```
 
 ## Linting
-`flake8-black` and `flake8-isort` are installed too:
+`flake8-black` and `flake8-isort` are installed too. The flake8-pylint pluging is still
+in early development, so we need to call pylint manually
 ```bash
 flake8
+pylint src/
 ```
 
 ## Black
 ```bash
-black django_bootstrap_project
+black src/
 ```
 
 ## Isort
