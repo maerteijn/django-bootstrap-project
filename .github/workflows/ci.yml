@@ -72,3 +72,19 @@ jobs:
         run: |
           source $(poetry env info --path)/bin/activate
           pytest
+
+  build-docker-image:
+    runs-on: ubuntu-latest
+    needs: run-tests
+    steps:
+      - name: Download src dir
+        uses: actions/download-artifact@v2
+        with:
+          name: src
+          path: ./src
+      - name: Build the docker image
+        run: |
+          docker-compose build
+      - name: Cleanup
+        run: |
+          docker-compose rm -f
