@@ -27,7 +27,7 @@ psycopg2-binary = "~2.8"
 django-environ = "^0.4.5"
 whitenoise = "^5.2.0"
 uWSGI = "^2.0.19"
-django-bootstrap-app = { git = "https://github.com/maerteijn/django-bootstrap-app.git", rev = "main" }
+django-bootstrap-app = { git = "https://github.com/maerteijn/django-bootstrap-app.git", tag = "v0.0.2" }
 
 [tool.poetry.dev-dependencies]
 flake8 = "~3.8"

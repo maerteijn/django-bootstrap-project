@@ -234,7 +234,7 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-bootstrap-app"
-version = "0.0.1+10fb009"
+version = "0.0.2+b5c980f"
 description = "An boilerplate / bootstrap installation of a Django app"
 category = "main"
 optional = false
@@ -247,8 +247,8 @@ Django = "3.2"
 [package.source]
 type = "git"
 url = "https://github.com/maerteijn/django-bootstrap-app.git"
-reference = "main"
-resolved_reference = "10fb0092c8eca1e75c66407052d66b395ca10789"
+reference = "v0.0.2"
+resolved_reference = "b5c980feade9701b4cd85eb09f43586c3b6a2991"
 
 [[package]]
 name = "django-environ"
@@ -887,7 +887,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c42106decab9ce1c6bb056bdf05d814825f6ba6d5be61dc60da6cb324f6a4fe4"
+content-hash = "d3893a84d7f6f68f4eb0801b33b87ca95713397a694d379d9ec0b41b508d4b23"
 
 [metadata.files]
 appdirs = [
