@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_bootstrap_project.config.DjangoBootstrapProjectConfig",
     "django_bootstrap_project.config.DjangoBootstrapProjectAdminConfig",
+    "django_bootstrap_app",
 ]
 
 MIDDLEWARE = [
