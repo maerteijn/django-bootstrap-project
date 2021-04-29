@@ -37,7 +37,14 @@ pytest
 ```
 
 ## Run
-`manage.py` is installed as a script so you can run it from anywhere
+When you used a virtualenv yourself (mkvirtualenv or pyenv), you can just run the scripts below.
+
+If not, activate the venv created with poetry:
+```bash
+source $(poetry env info --path)/bin/activate
+```
+
+Now you can acces `manage.py` from anywhere as it is an installed script
 ```bash
 manage.py migrate
 manage.py createsuperuser
