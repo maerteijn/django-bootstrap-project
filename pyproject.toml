@@ -65,6 +65,10 @@ disable = "C,WW5103"
 [tool.pylint.format]
 max-line-length = "88"
 
+[tool.pylint.master]
+init-hook = "import sys; sys.path.append('.')"
+ignore = "migrations"
+
 [tool.isort]
 force_grid_wrap = 0
 include_trailing_comma = true
