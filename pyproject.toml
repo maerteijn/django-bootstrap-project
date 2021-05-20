@@ -78,6 +78,7 @@ use_parentheses = true
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "django_bootstrap_project.settings"
+django_debug_mode = true
 testpaths = "tests/"
 addopts = "--reuse-db --cov=django_bootstrap_project"
 env = [
