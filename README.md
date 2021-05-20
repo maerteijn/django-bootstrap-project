@@ -10,6 +10,7 @@ pip install poetry
 
 # This will also create a virtualenv when not activated
 poetry install
+source $(poetry env info --path)/bin/activate
 ```
 
 ## Linting
