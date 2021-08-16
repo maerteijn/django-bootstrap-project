@@ -24,13 +24,12 @@ jobs:
            python-version: '3.9'
       - name: Install python dependencies
         run: |
-          pip install poetry poetry dynamic versioning
-          poetry install
+          pip install pdm
+          pdm install
       - name: Lint with flake8 and pylints
         run: |
-          source $(poetry env info --path)/bin/activate
-          flake8 .
-          pylint src/
+          pdm run flake8
+          pdm run pylint
       - name: Upload src dir as artefact
         uses: actions/upload-artifact@v2
         with:
@@ -66,12 +65,11 @@ jobs:
            python-version: '3.9'
       - name: Install python dependencies
         run: |
-          pip install poetry
-          poetry install
+          pip install pdm
+          pdm install
       - name: Run the testsuite
         run: |
-          source $(poetry env info --path)/bin/activate
-          pytest
+          pdm run pytest
 
   build-docker-image:
     runs-on: ubuntu-latest
