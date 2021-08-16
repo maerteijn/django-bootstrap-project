@@ -30,12 +30,6 @@ jobs:
         run: |
           pdm run flake8
           pdm run pylint
-      - name: Upload src dir as artefact
-        uses: actions/upload-artifact@v2
-        with:
-          name: src
-          path: ./src
-
   run-tests:
     services:
       postgres:
@@ -54,10 +48,9 @@ jobs:
     needs: setup-and-linting
     runs-on: ubuntu-latest
     steps:
-      - name: Download src dir
-        uses: actions/download-artifact@v2
+      - name: Checkout the repository
+        uses: actions/checkout@v2
         with:
-          name: src
           path: ./src
       - name: Setup Python 3.x
         uses: actions/setup-python@v2
@@ -75,10 +68,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: run-tests
     steps:
-      - name: Download src dir
-        uses: actions/download-artifact@v2
+      - name: Checkout the repository
+        uses: actions/checkout@v2
         with:
-          name: src
           path: ./src
       - name: Build the docker image
         run: |
