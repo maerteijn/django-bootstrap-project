@@ -4,52 +4,41 @@
 
 A clean Poetry based Django project which includes CI
 
-## Install with poetry
+## Install with pdm
 ```bash
 git clone https://github.com/maerteijn/django-bootstrap-project
-pip install poetry
-
-# This will also create a virtualenv when not activated
-poetry install
-source $(poetry env info --path)/bin/activate
+pip install pdm
+pdm install
 ```
 
 ## Linting
 `flake8-black` and `flake8-isort` are installed too. The flake8-pylint pluging is still
 in early development, so we need to call pylint manually
 ```bash
-flake8
-pylint src/
+pdm run flake8
+pdm run pylint
 ```
 
 ## Black
 ```bash
-black src/
+pdm run black
 ```
 
 ## Isort
 ```bash
-isort .
+pdm run isort
 ```
 
 ## Test
 Pytest with coverage is default enabled
 ```bash
-pytest
+pdm run pytest
 ```
 
-## Run
-When you used a virtualenv yourself (mkvirtualenv or pyenv), you can just run the scripts below.
-
-If not, activate the venv created with poetry:
+## Run development server
 ```bash
-source $(poetry env info --path)/bin/activate
-```
-
-Now you can acces `manage.py` from anywhere as it is an installed script
-```bash
-manage.py migrate
-manage.py createsuperuser
-manage.py runserver
+pdm run manage.py migrate
+pdm run manage.py createsuperuser
+pdm run manage.py runserver
 ```
 

@@ -44,7 +44,8 @@ package-dir = "src"
 flake8 = "flake8 ."
 pylint = "pylint src/"
 pytest = "pytest"
-manage = "manage.py"
+black = "black src/"
+isort = "isort ."
 
 [tool.pdm.dev-dependencies]
 dev = [
