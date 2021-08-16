@@ -1,5 +1,6 @@
 # django-bootstrap-project
 [![Django CI](https://github.com/maerteijn/django-bootstrap-project/actions/workflows/ci.yml/badge.svg)](https://github.com/maerteijn/django-bootstrap-project/actions/workflows/ci.yml)
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
 
 A clean Poetry based Django project which includes CI
 
