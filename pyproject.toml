@@ -40,6 +40,12 @@ repository = "https://github.com/maerteijn/django-bootstrap-project"
 includes = ["src/django_bootstrap_project"]
 package-dir = "src"
 
+[tool.pdm.scripts]
+flake8 = "flake8 ."
+pylint = "pylint src/"
+pytest = "pytest"
+manage = "manage.py"
+
 [tool.pdm.dev-dependencies]
 dev = [
     "flake8~=3.8",
@@ -58,7 +64,7 @@ build-backend = "pdm.pep517.api"
 
 [tool.black]
 line-length = 88
-exclude = "/migrations/"
+exclude = "/migrations/|/__pypackages__/"
 
 [tool.pylint.messages_control]
 disable = "C,WW5103"
@@ -68,7 +74,7 @@ max-line-length = "88"
 
 [tool.pylint.master]
 init-hook = "import sys; sys.path.append('.')"
-ignore = "migrations"
+ignore = "migrations, __pypackages__"
 
 [tool.isort]
 force_grid_wrap = 0
