@@ -14,19 +14,19 @@ source $(poetry env info --path)/bin/activate
 ```
 
 ## Linting
-`flake8-black` and `flake8-isort` are installed too. The flake8-pylint pluging is still
-in early development, so we need to call pylint manually
+`flake8-black`, `flake8-isort` and `flake8-pylint` are installed too.
 ```bash
 flake8
-pylint src/
 ```
 
-## Black
+## Formatting
+
+### Black
 ```bash
 black src/
 ```
 
-## Isort
+### Isort
 ```bash
 isort .
 ```
@@ -37,7 +37,7 @@ Pytest with coverage is default enabled
 pytest
 ```
 
-## Run
+## Run dev server
 When you used a virtualenv yourself (mkvirtualenv or pyenv), you can just run the scripts below.
 
 If not, activate the venv created with poetry:
@@ -52,3 +52,9 @@ manage.py createsuperuser
 manage.py runserver
 ```
 
+## Run docker setup
+
+That would be just as simple as:
+```bash
+docker-compose up
+````
