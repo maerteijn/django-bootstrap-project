@@ -9,6 +9,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
   dpp-django:
+    restart: on-failure
     container_name: dbp-django
     build:
       context: .
