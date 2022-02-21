@@ -1,4 +1,4 @@
-FROM python:3.9.10-slim-bullseye AS builder-backend
+FROM python:3.9.10-slim-buster AS builder-backend
 
 COPY . /code/
 WORKDIR /code
@@ -7,7 +7,8 @@ RUN apt-get install -y gcc git
 RUN pip wheel . --wheel-dir ./dist/wheels
 COPY docker/uwsgi.ini /etc/uwsgi.ini
 
-FROM python:3.9.10-slim-bullseye
+
+FROM python:3.9.10-slim-buster
 RUN useradd --system --user-group django
 
 # copy all wheel artifacts from the builder-backend image and install them
