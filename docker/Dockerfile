@@ -1,18 +1,17 @@
-FROM python:3.9.4-buster AS builder-backend
+FROM python:3.9.10-slim-bullseye AS builder-backend
 
 COPY . /code/
 WORKDIR /code
-
-ENV PIP_DISABLE_PIP_VERSION_CHECK=1
+RUN apt-get update
+RUN apt-get install -y gcc git
 RUN pip wheel . --wheel-dir ./dist/wheels
 COPY docker/uwsgi.ini /etc/uwsgi.ini
 
-FROM python:3.9.4-buster
+FROM python:3.9.10-slim-bullseye
 RUN useradd --system --user-group django
 
 # copy all wheel artifacts from the builder-backend image and install them
 COPY --from=builder-backend /code/dist/wheels/*.whl /opt/wheels/
-ENV PIP_DISABLE_PIP_VERSION_CHECK=1
 RUN pip install --no-deps --no-index --find-links /opt/wheels/ /opt/wheels/*.whl
 
 # create public directories
